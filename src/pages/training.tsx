@@ -30,7 +30,7 @@ const TrainingList: NextPage = () => {
               ></Image>
               <div className="font-thin">
                 {`• ${dayjs(item.createdAt).fromNow()}  - ${
-                  item.autor?.lastName
+                  item.autor?.lastName ?? ""
                 }`}
               </div>
             </ul>
